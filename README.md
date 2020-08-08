@@ -1,2 +1,2 @@
 # veracaglayan
-Website for my Vera Caglayan.
+Website for Vera Caglayan.

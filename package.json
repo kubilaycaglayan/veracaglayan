@@ -19,6 +19,9 @@
   },
   "homepage": "https://github.com/kubilaycaglayan/veracaglayan#readme",
   "devDependencies": {
+    "css-loader": "^4.2.1",
+    "file-loader": "^6.0.0",
+    "style-loader": "^1.2.1",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
   }
