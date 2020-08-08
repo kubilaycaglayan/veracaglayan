@@ -1,8 +1,98 @@
-$bg1: #a13478
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Great+Vibes&display=swap')
+
+$bp-xl: 1200px
+$bp-lg: 992px
+$bp-md: 768px
+$bp-sm: 576px
+
+$gray: #a7a7a7
+$black: #292b2c
+
+@mixin pad-x($padd)
+  padding-left: $padd
+  padding-right: $padd
+
+
+html *
+  padding: 0
+  margin: 0
+  border-style: border-box
+  font-family: 'Cormorant Upright', serif
+  list-style-type: none
+  font-size: 20px
+  a
+    color: $black
+    &:hover
+      text-decoration: none
+      color: $gray
 
 body
-  background-color: $bg1
-  text-align: center
-  div
-    margin: 10% auto
-    color: white
+  min-width: 370px
+
+.bg-wrapper
+  background-image: url("../images/bg.png")
+  background-size: cover
+  background-position-y: 20%
+  background-position-x: 50%
+  @media ( max-width: $bp-sm)
+    height: 200px
+  @media ( min-width: $bp-sm)
+    height: 250px
+  @media ( min-width: $bp-md)
+    height: 300px
+  @media ( min-width: $bp-lg)
+    height: 350px
+  @media ( min-width: $bp-xl)
+    height: 400px
+  border-bottom: solid 3px $gray
+.content
+  padding-top: 30px
+  background-color: #EDF1F4
+  .photo
+    img
+      border: solid 3px $gray
+      @media ( max-width: $bp-sm)
+        width: 50vw
+      @media ( min-width: $bp-sm)
+        width: 35vw
+      @media ( min-width: $bp-md)
+        width: 30vw
+      @media ( min-width: $bp-lg)
+        width: 20vw
+      @media ( min-width: $bp-xl)
+        width: 20vw
+  .card-body
+    h2
+      overflow-wrap: normal
+      word-wrap: normal
+
+.details
+  .information
+    margin-top: 5%
+    @media ( max-width: $bp-sm)
+      @include pad-x($padd: 20px)
+    @media ( min-width: $bp-sm)
+      @include pad-x($padd: 40px)
+    @media ( min-width: $bp-md)
+      @include pad-x($padd: 70px)
+    @media ( min-width: $bp-lg)
+      @include pad-x($padd: 100px)
+    @media ( min-width: $bp-xl)
+      @include pad-x($padd: 150px)
+
+.side-menu
+  h5
+    font-size: 1.6rem
+  font-size: 1.5rem
+  ul
+    li
+      position: relative
+      .far
+        color: $gray
+        font-size: 0.8rem
+        position: absolute
+        left: -15px
+        top: 10px
+
+.font-two
+  font-family: 'Great Vibes', cursive

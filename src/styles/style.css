@@ -1,10 +1,168 @@
-body {
-  background-color: #a13478;
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Great+Vibes&display=swap");
+html * {
+  padding: 0;
+  margin: 0;
+  border-style: border-box;
+  font-family: 'Cormorant Upright', serif;
+  list-style-type: none;
+  font-size: 20px;
 }
 
-body div {
-  margin: 10% auto;
-  color: white;
+html * a {
+  color: #292b2c;
+}
+
+html * a:hover {
+  text-decoration: none;
+  color: #a7a7a7;
+}
+
+body {
+  min-width: 370px;
+}
+
+.bg-wrapper {
+  background-image: url("../images/bg.png");
+  background-size: cover;
+  background-position-y: 20%;
+  background-position-x: 50%;
+  border-bottom: solid 3px #a7a7a7;
+}
+
+@media (max-width: 576px) {
+  .bg-wrapper {
+    height: 200px;
+  }
+}
+
+@media (min-width: 576px) {
+  .bg-wrapper {
+    height: 250px;
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-wrapper {
+    height: 300px;
+  }
+}
+
+@media (min-width: 992px) {
+  .bg-wrapper {
+    height: 350px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .bg-wrapper {
+    height: 400px;
+  }
+}
+
+.content {
+  padding-top: 30px;
+  background-color: #EDF1F4;
+}
+
+.content .photo img {
+  border: solid 3px #a7a7a7;
+}
+
+@media (max-width: 576px) {
+  .content .photo img {
+    width: 50vw;
+  }
+}
+
+@media (min-width: 576px) {
+  .content .photo img {
+    width: 35vw;
+  }
+}
+
+@media (min-width: 768px) {
+  .content .photo img {
+    width: 30vw;
+  }
+}
+
+@media (min-width: 992px) {
+  .content .photo img {
+    width: 20vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  .content .photo img {
+    width: 20vw;
+  }
+}
+
+.content .card-body h2 {
+  overflow-wrap: normal;
+  word-wrap: normal;
+}
+
+.details .information {
+  margin-top: 5%;
+}
+
+@media (max-width: 576px) {
+  .details .information {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: 576px) {
+  .details .information {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  .details .information {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}
+
+@media (min-width: 992px) {
+  .details .information {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .details .information {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+}
+
+.side-menu {
+  font-size: 1.5rem;
+}
+
+.side-menu h5 {
+  font-size: 1.6rem;
+}
+
+.side-menu ul li {
+  position: relative;
+}
+
+.side-menu ul li .far {
+  color: #a7a7a7;
+  font-size: 0.8rem;
+  position: absolute;
+  left: -15px;
+  top: 10px;
+}
+
+.font-two {
+  font-family: 'Great Vibes', cursive;
 }
 /*# sourceMappingURL=style.css.map */
