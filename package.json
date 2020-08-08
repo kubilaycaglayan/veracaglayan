@@ -1,0 +1,25 @@
+{
+  "name": "veracaglayan",
+  "version": "1.0.0",
+  "description": "Website for my Vera Caglayan.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kubilaycaglayan/veracaglayan.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kubilaycaglayan/veracaglayan/issues"
+  },
+  "homepage": "https://github.com/kubilaycaglayan/veracaglayan#readme",
+  "devDependencies": {
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
+}
