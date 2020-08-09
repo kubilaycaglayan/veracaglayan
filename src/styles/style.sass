@@ -13,9 +13,12 @@ $bg-light: #EDF1F4
   padding-left: $padd
   padding-right: $padd
 
+@mixin pad-y($padd)
+  padding-bottom: $padd
+  padding-top: $padd
+
 
 html
-  background-color: $bg-light
   font-size: 20px
   padding: 0
   margin: 0
@@ -29,10 +32,37 @@ html
         text-decoration: none
         color: $gray
 
-body
-  min-width: 370px
-  max-width: 1440px
-  margin: 0 auto
+nav
+  position: fixed
+  right: 50px
+  margin-top: 10%
+  z-index: 5
+  background-color: $bg-light
+  padding: 7px
+  .snow-menu
+    z-index: 5
+    color: $black
+    position: fixed
+    top: 4%
+    right: 4%
+  @media ( max-width: $bp-md )
+    ul
+      display: none
+    h5
+      display: none
+  @media ( min-width: $bp-md )
+    ul
+      display: block !important
+    h5
+      display: block !important
+
+main
+  padding-bottom: 3%
+  background-color: $bg-light
+  body
+    min-width: 370px
+    max-width: 1440px
+    margin: 0 auto
 
 .bg-wrapper
   background-image: url("../images/bg.png")
@@ -72,18 +102,27 @@ body
       word-wrap: normal
 
 .details
-  .information
+  margin-top: 5%
+  @media ( max-width: $bp-sm)
+    @include pad-x($padd: 20px)
+  @media ( min-width: $bp-sm)
+    @include pad-x($padd: 40px)
+  @media ( min-width: $bp-md)
+    @include pad-x($padd: 70px)
+  @media ( min-width: $bp-lg)
+    @include pad-x($padd: 100px)
+  @media ( min-width: $bp-xl)
+    @include pad-x($padd: 150px)
+  .article-media
+    cursor: pointer
     margin-top: 5%
-    @media ( max-width: $bp-sm)
-      @include pad-x($padd: 20px)
-    @media ( min-width: $bp-sm)
-      @include pad-x($padd: 40px)
-    @media ( min-width: $bp-md)
-      @include pad-x($padd: 70px)
-    @media ( min-width: $bp-lg)
-      @include pad-x($padd: 100px)
-    @media ( min-width: $bp-xl)
-      @include pad-x($padd: 150px)
+    .media
+      baclground-color: white
+      &:hover
+        transform: scale(1.05)
+        transition: transform 1s
+      img
+        width: 100px
 
 .side-menu
   h5
@@ -98,6 +137,43 @@ body
         position: absolute
         left: -15px
         top: 10px
+
+article
+  h2
+    text-align: center
+  blockquote
+    text-indent: 0
+    font-weight: bolder
+    font-size: 24px
+    text-align: center
+  margin: 0 auto
+  max-width: 600px
+  @media screen and ( max-width: $bp-sm )
+    font-size: 18px
+  font-size: 22px
+  text-indent: 15px
+  @include pad-x($padd: 20px)
+  @include pad-y($padd: 50px)
+  .signature
+    text-align: right
+  .center
+    margin: 0 auto
+  .img-wrapper
+    @include pad-y($padd: 15px)
+  .size-sm
+    width: 150px
+  .size-md
+    width: 250px
+  .size-lg
+    max-width: 600px
+    width: 100%
+
+
+
+
+footer
+  height: 100px
+  background-color: $black
 
 .font-two
   font-family: 'Great Vibes', cursive
