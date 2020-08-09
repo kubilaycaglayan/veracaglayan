@@ -7,27 +7,32 @@ $bp-sm: 576px
 
 $gray: #a7a7a7
 $black: #292b2c
+$bg-light: #EDF1F4
 
 @mixin pad-x($padd)
   padding-left: $padd
   padding-right: $padd
 
 
-html *
+html
+  background-color: $bg-light
+  font-size: 20px
   padding: 0
   margin: 0
-  border-style: border-box
-  font-family: 'Cormorant Upright', serif
-  list-style-type: none
-  font-size: 20px
-  a
-    color: $black
-    &:hover
-      text-decoration: none
-      color: $gray
+  *
+    font-family: 'Cormorant Upright', serif
+    box-sizing: border-box
+    list-style-type: none
+    a
+      color: $black
+      &:hover
+        text-decoration: none
+        color: $gray
 
 body
   min-width: 370px
+  max-width: 1440px
+  margin: 0 auto
 
 .bg-wrapper
   background-image: url("../images/bg.png")
@@ -47,20 +52,20 @@ body
   border-bottom: solid 3px $gray
 .content
   padding-top: 30px
-  background-color: #EDF1F4
+  background-color: $bg-light
   .photo
     img
       border: solid 3px $gray
       @media ( max-width: $bp-sm)
         width: 50vw
       @media ( min-width: $bp-sm)
-        width: 35vw
+        width: 30vw
       @media ( min-width: $bp-md)
         width: 30vw
       @media ( min-width: $bp-lg)
         width: 20vw
       @media ( min-width: $bp-xl)
-        width: 20vw
+        width: 300px
   .card-body
     h2
       overflow-wrap: normal
