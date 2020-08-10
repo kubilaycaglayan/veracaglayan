@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Great+Vibes&display=swap");
+html {
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  background-color: #EDF1F4;
+  scroll-behavior: smooth;
+}
+
+html * {
+  font-family: 'Cormorant Upright', serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style-type: none;
+}
+
+html * a {
+  color: #292b2c;
+}
+
+html * a:hover {
+  text-decoration: none;
+  color: #a7a7a7;
+}
+
+html body {
+  min-width: 370px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+html body main {
+  padding-bottom: 3%;
+  background-color: #EDF1F4;
+}
+
+article {
+  margin: 0 auto;
+  max-width: 600px;
+  font-size: 22px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+article h2 {
+  text-align: center;
+}
+
+article blockquote {
+  text-indent: 0;
+  font-weight: bolder;
+  font-size: 24px;
+  text-align: center;
+}
+
+article p {
+  text-indent: 15px;
+}
+
+@media screen and (max-width: 576px) {
+  article {
+    font-size: 18px;
+  }
+}
+
+article .signature {
+  text-align: right;
+}
+
+article .center {
+  margin: 0 auto;
+}
+
+article .img-wrapper {
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+article .size-sm {
+  width: 150px;
+}
+
+article .size-md {
+  width: 250px;
+}
+
+article .size-lg {
+  max-width: 600px;
+  width: 100%;
+}
+
+article .return-button {
+  width: 150px;
+  position: relative;
+  margin-left: auto;
+}
+/*# sourceMappingURL=article.css.map */

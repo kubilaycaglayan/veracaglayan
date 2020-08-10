@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Great+Vibes&display=swap");
+html {
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  background-color: #EDF1F4;
+  scroll-behavior: smooth;
+}
+
+html * {
+  font-family: 'Cormorant Upright', serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style-type: none;
+}
+
+html * a {
+  color: #292b2c;
+}
+
+html * a:hover {
+  text-decoration: none;
+  color: #a7a7a7;
+}
+
+html body {
+  min-width: 370px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+html body main {
+  padding-bottom: 3%;
+  background-color: #EDF1F4;
+}
+
+.snow-menu-button {
+  font-size: 2rem;
+  z-index: 5;
+  color: #292b2c;
+  position: fixed;
+  bottom: 4%;
+  right: 4%;
+}
+
+@media (max-width: 992px) {
+  .snow-menu-button {
+    display: block;
+  }
+}
+
+@media (min-width: 992px) {
+  .snow-menu-button {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .nav-wrapper {
+    display: none;
+    position: fixed;
+    bottom: calc( 4% + 50px);
+    right: calc( 4% + 10px);
+    width: 200px;
+    background-color: #83838396;
+    border-radius: 10px;
+    padding-top: 5%;
+  }
+}
+
+@media (min-width: 992px) {
+  .nav-wrapper {
+    display: block !important;
+  }
+}
+
+.nav-wrapper nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 50px;
+  z-index: 5;
+  padding: 7px;
+}
+
+.bg-wrapper {
+  background-image: url("../images/bg.png");
+  background-size: cover;
+  background-position-y: 20%;
+  background-position-x: 50%;
+  border-bottom: solid 3px #a7a7a7;
+}
+
+@media (max-width: 576px) {
+  .bg-wrapper {
+    height: 200px;
+  }
+}
+
+@media (min-width: 576px) {
+  .bg-wrapper {
+    height: 250px;
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-wrapper {
+    height: 300px;
+  }
+}
+
+@media (min-width: 992px) {
+  .bg-wrapper {
+    height: 350px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .bg-wrapper {
+    height: 400px;
+  }
+}
+
+.content {
+  padding-top: 30px;
+  background-color: #EDF1F4;
+}
+
+.content .photo img {
+  border: solid 3px #a7a7a7;
+}
+
+@media (max-width: 576px) {
+  .content .photo img {
+    width: 50vw;
+  }
+}
+
+@media (min-width: 576px) {
+  .content .photo img {
+    width: 30vw;
+  }
+}
+
+@media (min-width: 768px) {
+  .content .photo img {
+    width: 30vw;
+  }
+}
+
+@media (min-width: 992px) {
+  .content .photo img {
+    width: 20vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  .content .photo img {
+    width: 300px;
+  }
+}
+
+.content .card-body h2 {
+  overflow-wrap: normal;
+  word-wrap: normal;
+}
+
+.details {
+  margin-top: 5%;
+}
+
+@media (max-width: 576px) {
+  .details {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: 576px) {
+  .details {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  .details {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}
+
+@media (min-width: 992px) {
+  .details {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .details {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+}
+
+.details .article-media {
+  cursor: pointer;
+  margin-top: 5%;
+}
+
+.details .article-media .media {
+  baclground-color: white;
+}
+
+.details .article-media .media:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.details .article-media .media img {
+  width: 150px;
+}
+
+.side-menu {
+  font-size: 1.5rem;
+}
+
+.side-menu h5 {
+  font-size: 1.6rem;
+}
+
+.side-menu ul li {
+  position: relative;
+}
+
+.side-menu ul li .far {
+  color: #a7a7a7;
+  font-size: 0.8rem;
+  position: absolute;
+  left: -15px;
+  top: 10px;
+}
+
+footer {
+  height: 100px;
+  background-color: #292b2c;
+}
+
+.font-two {
+  font-family: 'Great Vibes', cursive;
+}
+/*# sourceMappingURL=home.css.map */

@@ -1,0 +1,37 @@
+@import 'var'
+@import 'html'
+
+article
+  h2
+    text-align: center
+  blockquote
+    text-indent: 0
+    font-weight: bolder
+    font-size: 24px
+    text-align: center
+  p
+    text-indent: 15px
+  margin: 0 auto
+  max-width: 600px
+  @media screen and ( max-width: $bp-sm )
+    font-size: 18px
+  font-size: 22px
+  @include pad-x($padd: 20px)
+  @include pad-y($padd: 50px)
+  .signature
+    text-align: right
+  .center
+    margin: 0 auto
+  .img-wrapper
+    @include pad-y($padd: 15px)
+  .size-sm
+    width: 150px
+  .size-md
+    width: 250px
+  .size-lg
+    max-width: 600px
+    width: 100%
+  .return-button
+    width: 150px
+    position: relative
+    margin-left: auto

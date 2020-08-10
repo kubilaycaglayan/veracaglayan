@@ -21,16 +21,21 @@ html * a:hover {
   color: #a7a7a7;
 }
 
-nav {
-  position: fixed;
+.nav-wrapper {
+  position: absolute;
   right: 50px;
-  margin-top: 10%;
+  height: 500px;
+}
+
+.nav-wrapper nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 50px;
   z-index: 5;
-  background-color: #EDF1F4;
   padding: 7px;
 }
 
-nav .snow-menu {
+.nav-wrapper nav .snow-menu {
   z-index: 5;
   color: #292b2c;
   position: fixed;
@@ -38,20 +43,20 @@ nav .snow-menu {
   right: 4%;
 }
 
-@media (max-width: 768px) {
-  nav ul {
+@media (max-width: 992px) {
+  .nav-wrapper nav ul {
     display: none;
   }
-  nav h5 {
+  .nav-wrapper nav h5 {
     display: none;
   }
 }
 
-@media (min-width: 768px) {
-  nav ul {
+@media (min-width: 992px) {
+  .nav-wrapper nav ul {
     display: block !important;
   }
-  nav h5 {
+  .nav-wrapper nav h5 {
     display: block !important;
   }
 }
@@ -228,60 +233,6 @@ main body {
   position: absolute;
   left: -15px;
   top: 10px;
-}
-
-article {
-  margin: 0 auto;
-  max-width: 600px;
-  font-size: 22px;
-  text-indent: 15px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 50px;
-  padding-top: 50px;
-}
-
-article h2 {
-  text-align: center;
-}
-
-article blockquote {
-  text-indent: 0;
-  font-weight: bolder;
-  font-size: 24px;
-  text-align: center;
-}
-
-@media screen and (max-width: 576px) {
-  article {
-    font-size: 18px;
-  }
-}
-
-article .signature {
-  text-align: right;
-}
-
-article .center {
-  margin: 0 auto;
-}
-
-article .img-wrapper {
-  padding-bottom: 15px;
-  padding-top: 15px;
-}
-
-article .size-sm {
-  width: 150px;
-}
-
-article .size-md {
-  width: 250px;
-}
-
-article .size-lg {
-  max-width: 600px;
-  width: 100%;
 }
 
 footer {
